@@ -22,10 +22,10 @@
 
         - name: Add Docker's repo
           ansible.builtin.apt_repository:
-            url: >
+            repo: >
               deb [signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu
               {{ ansible_distribution_release }} stable
-            file: docker
+            filename: docker
             update_cache: true
 
     - name: Block of installing docker
