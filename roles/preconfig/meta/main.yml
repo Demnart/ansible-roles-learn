@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  role_name: preconfig
+  author: Ariom Rogov
+  description: Elasticsearch for Linux.
+  license: MIT
+  min_ansible_version: 2.15.5
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
